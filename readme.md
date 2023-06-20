@@ -1,11 +1,11 @@
 # ![epic bama logo](https://cdn.discordapp.com/attachments/927889355266228257/1120854277548691506/logo-48.png) BAMA BLOCKER WOOOOO
 
-**The BlueLiteBlocker plugin but BAMA-IFIED!.**
+**The BlueLiteBlocker plugin but BAMA-IFIED!**
 
 ### About
 Look, this is a fork of a project and I got carried away lmfao - its main purpose is to delete promoted tweets instead of just collapsing them but it also has a reworked UI cos I felt like it and also a different logo because I'm a graphic designer so I enjoy that kind of thing and also a different name as BlueLiteBlocker sounds stupid im sorry. I dont intend for this to be a replacement or anything to the original its just a  lil bit of fun as im not a programmer
 
-(og description from plugin)
+(og description from plugin) \
 This extension allows you to hide Tweets from Twitter Blue users you don't follow, if they have less than a set number of followers.
 You can customize the follower threshold and choose between collapsing or removing Tweets. 
 
