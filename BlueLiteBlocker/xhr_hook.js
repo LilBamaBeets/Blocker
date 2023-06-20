@@ -66,8 +66,7 @@
             }
 
             // hook notifications API to parse notification feed
-            if (arguments[1].search('https://twitter.com/i/api/2/notifications/all.json') !== -1 ||
-                arguments[1].search('https://twitter.com/i/api/2/notifications/mentions.json') !== -1) {
+            if (arguments[1].search('https://twitter.com/i/api/2/notifications/.*') !== -1) {
                 if (!this._xhr_response_hooked) {
                     this._xhr_response_hooked = true;
                     set_response_hook(this, 'search');
@@ -162,7 +161,7 @@
 
         let tweet_data = item_content['tweet_results']['result'];
         if(blf_settings.hide_promote && key_exists(item_content, 'promotedMetadata')) {
-            hide_tweet(item_content['tweet_results'], false, 'Hidden Ad');
+            delete tweet_results['result'];
         }
 
         // tweets of type 'TweetWithVisibilityResults' have a slightly different format we need to parse
@@ -275,9 +274,7 @@
                             if (is_bad_user(user)) {
                                 // we can prevent tweets from being displayed by removing 'displayType'
                                 //note: due to the way the client works, we can only remove tweets not collapse them.
-                                if(key_exists(entry['content']['item']['content'], 'tweet')) {
-                                    entry['content']['item']['content']['tweet']['displayType'] = '';
-                                }
+                                entry['content']['item']['content']['tweet']['displayType'] = '';
                                 console.log(`Tweet removed from @${user.handle} (Blue User - ${user.followers} followers)`);
                             }
                         }

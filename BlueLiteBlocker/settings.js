@@ -15,7 +15,7 @@ async function saveOptions(e) {
 
 function restoreSettings() {
     chrome.runtime.sendMessage({ method: 'getSettings'}, async function(settings) {
-        document.querySelector("#version-number").innerText = 'BlueLiteBlocker v' + settings.version;
+        /*document.querySelector("#version-number").innerText = 'BlueLiteBlocker v' + settings.version;*/
         document.querySelector("#hard-hide").checked = settings.hard_hide;
         document.querySelector("#hide-promote").checked = settings.hide_promote;
         document.querySelector("#allow-affiliate").checked = settings.allow_affiliate;

@@ -1,30 +1,46 @@
-<!DOCTYPE html>
-<html lang="en" style="min-width:200px;max-width:400px;background-color:#191919;">
+    <!DOCTYPE html>
+<html lang="en" style="min-width:300px;max-width:400px;background-color:#009ef7;">
 <head>
     <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <style>
-    #threshold, #submit {
-        background-color:dimgray;
+    #threshold {
+        background-color:#ffffff;
         border-width: 0;
-        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        color: #009ef7;
         padding: 10px;
+        border-radius: 10px;
+    }
+
+    #submit {
+        background-color:#ffffff;
+        border-width: 0;
+        font-family: 'Poppins', sans-serif;
+        color: #009 ef7;
+        padding: 10px;
+        border-radius: 10px;
     }
 
     html {
-        font: normal 16px/1.2 'Open Sans', helvetica, arial, sans-serif;
+        /* font: normal 16px/1.2 'Poppins',sans-serif; */
+        font-family: 'Poppins', sans-serif;
         min-width: 200px;
         max-width: 400px;
         background-color: #191919;
         font-size: 110%;
-        color: #cbc9c9;
+        color: #ffffff;
     }
 
     .row {
-        padding-bottom: 10px;
+        padding-bottom: 10px; 
         Display: block;
+        
     }
 
     label {
@@ -32,17 +48,18 @@
     }
 </style>
 <form name="block-settings" id="block-settings">
-    <h3 id="version-number">BlueLiteBlocker</h3></h3>
-    <strong>Hard Filtering</strong><br/>
-    removes filtered tweets from timeline entirely instead of just collapsing them<br/><br/>
+    <!-- <h2 id="version-number">BlueLiteBlocker</h2></h2> -->
+<h1>Blocker</h1>
+    <strong><font size="+2">Hard Filtering</font></strong><br/>
+    Removes filtered tweets from timeline entirely instead of just collapsing them<br/><br/>
 
-    <strong>Affiliated Users</strong><br/>
+    <strong><font size="+2">Affiliated Users</font></strong><br/>
     These are users with blue checks as a result of being associated with a verified brand. They are more likely to be high quality. </br></br>
 
-    <strong>Follower Threshold</strong><br/>
-    the minimum number of followers a Twitter Blue user must have to avoid filtering</br></br>
+    <strong><font size="+2">Follower Threshold</font></strong><br/>
+    The minimum number of followers a Twitter Blue user must have to avoid filtering</br></br>
     <div class="row"><input type="checkbox" id="hard-hide" name="hard-hide" /><label>Enable Hard Filter</label></div>
-    <div class="row"><input type="checkbox" id="hide-promote" name="hard-hide" /><label>Hide Promoted Tweets</label></div>
+    <div class="row"><input type="checkbox" id="hide-promote" name="hard-hide" /><label>Remove Promoted Tweets</label></div>
     <div class="row"><input type="checkbox" id="allow-affiliate" name="allow-affiliate" /><label>Allow Affiliated Users</label></div>
     <div class="row"><div class="row"></div><label>Follower Threshold</label></div>
     <div class="row"></div><div class="row"><input type="text" width="100px" id="threshold" name="threshold" value="100000"/></div>
