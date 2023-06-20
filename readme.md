@@ -1,4 +1,4 @@
-# ![epic bama logo]([BlueLiteBlocker/icons/logo-48.png](https://cdn.discordapp.com/attachments/927889355266228257/1120854277548691506/logo-48.png)) BAMA BLOCKER WOOOOO
+# ![epic bama logo](https://cdn.discordapp.com/attachments/927889355266228257/1120854277548691506/logo-48.png) BAMA BLOCKER WOOOOO
 
 **The BlueLiteBlocker plugin but BAMA-IFIED!.**
 
